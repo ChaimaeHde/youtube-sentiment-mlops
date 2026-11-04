@@ -1,6 +1,6 @@
 fastapi>=0.110
 uvicorn>=0.29
 pydantic>=2.0
-scikit-learn==X.Y.Z
-joblib==X.Y.Z
-numpy==X.Y.Z
+scikit-learn==1.9.1
+joblib==1.6.0
+numpy==2.5.4
