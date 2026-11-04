@@ -1,0 +1,15 @@
+{
+  "accuracy": 0.894,
+  "f1_macro": 0.8844,
+  "f1_per_class": {
+    "Négatif": 0.8221,
+    "Neutre": 0.9303,
+    "Positif": 0.9008
+  },
+  "inference_ms_batch50": 2.23,
+  "best_params": {
+    "clf__C": "10",
+    "tfidf__min_df": "2",
+    "tfidf__ngram_range": "(1, 1)"
+  }
+}
