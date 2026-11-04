@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Sentiment</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>YouTube Sentiment</h1>
+    <button id="themeToggle" class="icon-btn" title="Mode sombre / clair">🌙</button>
+  </header>
+
+  <div class="controls">
+    <label class="checkbox">
+      <input type="checkbox" id="autoScroll" checked>
+      Charger plus de commentaires (scroll auto)
+    </label>
+    <button id="analyzeBtn" class="primary">Analyser les commentaires</button>
+  </div>
+
+  <div id="status" class="status hidden"></div>
+
+  <section id="results" class="hidden">
+    <div class="summary">
+      <div id="donut" class="donut"><span id="totalCount">0</span></div>
+      <ul class="legend">
+        <li><span class="dot positive"></span>Positif <b id="posPct">0%</b></li>
+        <li><span class="dot neutral"></span>Neutre <b id="neuPct">0%</b></li>
+        <li><span class="dot negative"></span>Négatif <b id="negPct">0%</b></li>
+      </ul>
+    </div>
+    <p id="meta" class="meta"></p>
+
+    <div class="filters">
+      <button data-filter="all" class="active">Tous</button>
+      <button data-filter="positive">Positifs</button>
+      <button data-filter="neutral">Neutres</button>
+      <button data-filter="negative">Négatifs</button>
+    </div>
+
+    <ul id="commentList" class="comment-list"></ul>
+
+    <div class="actions">
+      <button id="copyBtn">Copier les résultats</button>
+      <button id="exportBtn">Exporter CSV</button>
+    </div>
+  </section>
+
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

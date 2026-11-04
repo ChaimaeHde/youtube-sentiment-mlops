@@ -1,0 +1,11 @@
+venv/
+data/
+logs/
+notebooks/
+reports/
+tests/
+chrome-extension/
+deployment/
+.git/
+**/__pycache__/
+*.pyc

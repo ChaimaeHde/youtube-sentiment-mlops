@@ -1,0 +1,6 @@
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.0
+scikit-learn==X.Y.Z
+joblib==X.Y.Z
+numpy==X.Y.Z
