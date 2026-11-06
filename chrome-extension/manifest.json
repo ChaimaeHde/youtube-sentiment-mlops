@@ -7,7 +7,7 @@
   "host_permissions": [
     "https://www.youtube.com/*",
     "http://127.0.0.1:8000/*",
-    "https://*.hf.space/*"
+    "https://*.app.github.dev/*"
   ],
   "action": {
     "default_popup": "popup.html",
